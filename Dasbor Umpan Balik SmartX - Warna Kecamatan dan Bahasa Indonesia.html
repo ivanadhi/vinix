@@ -1,0 +1,382 @@
+<script type="text/javascript">
+        var gk_isXlsx = false;
+        var gk_xlsxFileLookup = {"smartx_feedback_100rows.csv":false};
+        var gk_fileData = {"smartx_feedback_100rows.csv":"Bulan,Kecamatan,Pengguna_Aktif,Domisili_Usage(%),Pajak_Usage(%),Keluhan_Usage(%),Chatbot_Usage(%),Rating_Domisili,Rating_Pajak,Rating_Keluhan,Rating_Chatbot\r\nFebruari,Kecamatan Timur,2806,36.5,20.4,29.1,14,4.2,4,3.2,3\r\nApril,Kecamatan Selatan,1152,38,15.9,20.2,25.9,4.4,4,3.6,2.5\r\nApril,Kecamatan Timur,2895,32.8,18.1,28.7,20.5,4.5,4.3,3.8,2.4\r\nJuni,Kecamatan Tengah,2395,33.4,22.1,27.9,16.6,4.3,4.1,3.4,3\r\nMei,Kecamatan Utara,2467,36.2,15.7,21.6,26.4,4.8,4.4,3.2,2\r\nFebruari,Kecamatan Utara,2517,36.4,21.5,21.9,20.2,4.4,4,3.4,2.8\r\nApril,Kecamatan Selatan,1168,30.2,23.8,27.3,18.7,4.3,4,3.1,3\r\nApril,Kecamatan Utara,2103,31.8,18.5,21.2,28.5,4.5,4,3.2,2.8\r\nApril,Kecamatan Tengah,1327,30.2,24.3,21.9,23.6,4.3,4.1,3.6,3.1\r\nMaret,Kecamatan Selatan,3443,31.3,24.2,22.9,21.6,4.8,4.4,3.7,2.2\r\nApril,Kecamatan Tengah,3337,31,15.1,21.4,32.5,4,4.5,3.1,2.5\r\nApril,Kecamatan Timur,1435,37.7,20.4,27,14.8,4.7,4.2,3.7,2.7\r\nJuni,Kecamatan Timur,3121,30.3,24.3,21.1,24.3,4.4,4.4,3.2,3.1\r\nMaret,Kecamatan Selatan,1007,39.4,18,26.8,15.8,4.1,4.3,3.6,3.1\r\nJuni,Kecamatan Tengah,3259,37.2,15.2,20.1,27.5,4.5,4,4,2.5\r\nJanuari,Kecamatan Utara,1658,32.2,20.8,26.6,20.4,4.3,4.1,3,2.8\r\nJanuari,Kecamatan Selatan,2990,38.5,22.2,22.6,16.7,4.2,4.5,3.2,2.1\r\nMei,Kecamatan Tengah,1610,32.8,24.7,20.3,22.2,4.4,4.5,3.8,3\r\nMei,Kecamatan Utara,1410,33.8,18.6,28.4,19.1,4.6,3.9,3,2.3\r\nApril,Kecamatan Barat,1706,33.7,21.1,21.6,23.5,4.7,3.8,3.5,2.1\r\nJuni,Kecamatan Selatan,1653,32.4,19.8,22.7,25,4.4,4.3,3.4,2.7\r\nMaret,Kecamatan Barat,2550,32.7,20,22.7,24.7,4.4,4.3,3.4,2.9\r\nJuni,Kecamatan Barat,1042,39.4,24.2,27.1,9.4,4.4,4.1,3.2,2.6\r\nFebruari,Kecamatan Utara,2720,30.4,22.5,25.8,21.3,4.3,4.2,3.1,2.6\r\nMei,Kecamatan Tengah,1588,37.2,24.9,27.8,10.1,4.6,4.4,3.3,2.1\r\nMaret,Kecamatan Tengah,1517,33.7,23.8,21.9,20.6,4.3,4,3.8,3.1\r\nMaret,Kecamatan Barat,2669,33.1,15.8,24.9,26.2,4.4,3.8,3.5,2.7\r\nMei,Kecamatan Selatan,2219,38.5,22.7,20.7,18.1,4.8,4.1,3.2,2.6\r\nJanuari,Kecamatan Utara,1719,34.2,17.1,23.6,25.1,4.3,4.1,3.6,3\r\nFebruari,Kecamatan Timur,2421,35.4,17.7,24.3,22.6,4.7,4,3.3,3\r\nFebruari,Kecamatan Selatan,2905,39,17.7,20.6,22.6,4.1,4.3,3.6,2.3\r\nJanuari,Kecamatan Barat,1194,38.9,17.1,28.7,15.4,4.6,4.3,3.2,2.7\r\nFebruari,Kecamatan Barat,3024,35.5,21.4,23.5,19.6,4.8,4.1,3.9,2.6\r\nFebruari,Kecamatan Timur,3268,31.3,16.4,23.4,28.9,4,4.2,3.9,3\r\nJanuari,Kecamatan Timur,1212,32.4,19.3,28.4,19.9,4.6,4.1,3.9,2.4\r\nJanuari,Kecamatan Barat,2775,34.2,24.9,21.4,19.4,4.6,3.9,3.6,2.1\r\nJuni,Kecamatan Barat,2007,30.7,16.1,24.8,28.4,4.6,4.1,3.6,2.7\r\nFebruari,Kecamatan Tengah,2177,36.8,24.9,22.8,15.5,4.6,4.1,3.9,2.9\r\nJuni,Kecamatan Barat,2266,33.5,21.5,20.3,24.7,4.2,4.4,3.6,3\r\nJanuari,Kecamatan Timur,3066,39.3,17.9,24.3,18.5,4.4,3.9,3.8,2.6\r\nJuni,Kecamatan Utara,2795,39.2,15.7,24.4,20.7,4.1,3.8,3,3.1\r\nJanuari,Kecamatan Tengah,2242,35.4,22.9,24.3,17.3,4.1,4.4,3.1,2.7\r\nFebruari,Kecamatan Utara,1485,39.3,24,27.8,8.9,4,4.3,3.4,2.6\r\nFebruari,Kecamatan Timur,2419,36.4,22.5,22.5,18.5,4.6,4.3,3.9,2.5\r\nMei,Kecamatan Utara,2420,33.1,21.9,26.2,18.7,4.2,4.1,3.7,2.5\r\nJanuari,Kecamatan Selatan,1047,37.9,16.1,28.5,17.6,4.3,4.4,3.2,2\r\nJanuari,Kecamatan Timur,1059,31.6,15.9,29.1,23.4,4.2,4.2,3.4,2.7\r\nJanuari,Kecamatan Barat,3122,33.5,18,30,18.6,4.4,4.1,3.3,2.6\r\nMei,Kecamatan Barat,1162,30.3,19.8,25.6,24.3,4,4,3.4,2.9\r\nJuni,Kecamatan Barat,3488,37.2,23.9,21.7,17.2,4.6,4,3.3,2.3\r\nMaret,Kecamatan Barat,1451,33.7,17.7,25.5,23.1,4.4,4,3.5,2.4\r\nJanuari,Kecamatan Selatan,2923,39.9,20.6,21.9,17.6,4.3,4.2,4,3\r\nJuni,Kecamatan Timur,2569,33.1,24.4,21.8,20.6,4.7,4.2,3.9,3\r\nMei,Kecamatan Selatan,2907,32.2,15.1,22.7,30,4.4,4.1,3.8,3\r\nJuni,Kecamatan Selatan,3141,37.8,17.2,29.4,15.6,4.5,4.1,3.1,2\r\nJuni,Kecamatan Timur,1360,39.3,16.8,21.6,22.3,4.4,3.9,3.2,3.1\r\nMei,Kecamatan Utara,1155,39,21.4,29.6,9.9,4.2,4.3,3.8,2.6\r\nFebruari,Kecamatan Utara,1616,37,23.7,25.6,13.7,4.6,4,3.8,2.4\r\nApril,Kecamatan Timur,1316,39.5,16.2,22.3,22,4.7,4.4,3.8,3.1\r\nApril,Kecamatan Timur,1898,35.5,15,23.8,25.7,4.2,4.3,3.2,2.4\r\nApril,Kecamatan Selatan,2363,38.5,22.6,21.9,16.9,4.2,4.4,3.1,2.1\r\nJuni,Kecamatan Tengah,2806,31.8,22.6,27.6,18,4.4,4.2,3.6,2.5\r\nApril,Kecamatan Utara,1785,39.4,18,25.8,16.9,4.7,3.9,3.9,3.1\r\nJuni,Kecamatan Selatan,1394,36.1,21.4,28.7,13.8,4.2,4.4,4,3.1\r\nApril,Kecamatan Timur,1234,37.3,22.1,24.3,16.3,4.4,3.9,3.2,2.3\r\nFebruari,Kecamatan Utara,3302,32.4,15.8,29.4,22.4,4.4,3.9,3,3.1\r\nMaret,Kecamatan Utara,3082,38.8,21.7,21.6,17.9,4.5,4.3,3.2,2.9\r\nMaret,Kecamatan Timur,1807,33.3,20.8,25.6,20.3,4.6,4.2,3.3,2\r\nApril,Kecamatan Selatan,3204,36.3,17.4,28.8,17.5,4.5,4.5,3.3,3.1\r\nMaret,Kecamatan Utara,3373,38.7,18.3,25.3,17.7,4,4.3,3.6,2.2\r\nMaret,Kecamatan Tengah,1709,34.9,21.7,24,19.4,4.4,4.5,3.4,3.1\r\nApril,Kecamatan Selatan,1861,36.1,22.8,28.6,12.5,4.2,4.3,3.5,2.6\r\nApril,Kecamatan Tengah,1576,33.4,21.4,29.1,16.1,4.6,4.2,3.1,2.3\r\nJanuari,Kecamatan Selatan,1510,32.1,24.2,28,15.7,4.8,4.2,3.9,2.5\r\nJuni,Kecamatan Selatan,2860,38.5,17.4,21.9,22.3,4.6,4.2,3.4,3\r\nMei,Kecamatan Barat,3105,35.2,16.9,21.8,26.1,4.6,4.4,3.2,2.3\r\nJanuari,Kecamatan Utara,2344,39.5,21.3,29.5,9.6,4.1,4.5,3.7,2.5\r\nMei,Kecamatan Timur,2972,34,16.2,27.9,21.9,4.2,4.1,3.8,2.4\r\nFebruari,Kecamatan Tengah,2518,39.4,23,24.1,13.5,4.3,3.9,4,2.3\r\nApril,Kecamatan Barat,3383,32.3,21.1,24.1,22.5,4.7,4.5,3.2,2.6\r\nJuni,Kecamatan Utara,2886,37.3,16,28.4,18.3,4.5,4.4,3.6,2.8\r\nMaret,Kecamatan Selatan,2241,31.3,18.3,27.4,23,4.2,4,3.1,3.2\r\nFebruari,Kecamatan Selatan,2714,36.8,21.5,24.8,16.9,4.1,3.9,3.8,2.4\r\nMaret,Kecamatan Tengah,2894,30.7,18.8,28.3,22.2,4.2,4.4,3.6,2.7\r\nJuni,Kecamatan Selatan,2091,35.8,15.8,20.9,27.6,4.5,4.1,3.8,2.3\r\nFebruari,Kecamatan Selatan,2663,34.1,18.5,21.6,25.8,4.4,4.1,3.9,2.6\r\nFebruari,Kecamatan Timur,1041,35.3,21.2,26.3,17.2,4.2,4.1,3.5,3.2\r\nMei,Kecamatan Utara,1793,34.9,18.4,20.3,26.5,4,4.2,3,2.3\r\nMei,Kecamatan Timur,3068,31.7,20.5,23,24.8,4.2,4.2,3.6,3\r\nFebruari,Kecamatan Utara,1620,31.7,15.2,20.8,32.3,4.6,4.1,3.7,2.5\r\nFebruari,Kecamatan Barat,2921,30.3,23.2,20,26.4,4,4,4,3.1\r\nFebruari,Kecamatan Timur,3350,31.4,17.8,25.1,25.7,4.6,4.2,3.5,2.8\r\nFebruari,Kecamatan Tengah,1079,36.1,18.8,29.5,15.6,4.1,3.8,3.2,2.2\r\nMaret,Kecamatan Tengah,1066,35.3,17.6,20.1,27,4.4,4.5,3,2.1\r\nFebruari,Kecamatan Tengah,1967,34.6,16.9,26.3,22.2,4.1,4.3,3.8,2.7\r\nFebruari,Kecamatan Tengah,2424,32.5,15.1,27.6,24.7,4.1,4,3.4,2.2\r\nMei,Kecamatan Timur,2397,36,18.4,28.1,17.6,4.5,3.9,3,2.7\r\nJuni,Kecamatan Timur,1652,32.2,21.8,27,19,4.7,3.8,3.7,2.6\r\nJuni,Kecamatan Tengah,2197,33.1,20.2,20.9,25.8,4.6,4.3,3.6,2.7\r\nJuni,Kecamatan Tengah,1934,34.6,23.4,23.7,18.4,4.2,3.9,3.5,2.8"};
+        function filledCell(cell) {
+          return cell !== '' && cell != null;
+        }
+        function loadFileData(filename) {
+        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+            try {
+                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+                var firstSheetName = workbook.SheetNames[0];
+                var worksheet = workbook.Sheets[firstSheetName];
+
+                // Convert sheet to JSON to filter blank rows
+                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+                // Filter out blank rows (rows where all cells are empty, null, or undefined)
+                var filteredData = jsonData.filter(row => row.some(filledCell));
+
+                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+                var headerRowIndex = filteredData.findIndex((row, index) =>
+                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+                );
+                // Fallback
+                if (headerRowIndex === -1 || headerRowIndex > 25) {
+                  headerRowIndex = 0;
+                }
+
+                // Convert filtered JSON back to CSV
+                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+                return csv;
+            } catch (e) {
+                console.error(e);
+                return "";
+            }
+        }
+        return gk_fileData[filename] || "";
+        }
+        </script><!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dasbor Analisis Umpan Balik SmartX</title>
+  <!-- Memuat Tailwind CSS untuk gaya -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Memuat pustaka untuk React, Recharts, dan PapaParse -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.8.1/prop-types.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js"></script>
+  <script src="https://unpkg.com/papaparse@latest/papaparse.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chrono-node/1.3.11/chrono.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/recharts/2.15.0/Recharts.min.js"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <div id="root" class="container mx-auto p-6"></div>
+
+  <script type="text/babel">
+    // Inisialisasi komponen React dan Recharts
+    const { useState, useEffect } = React;
+    const {
+      LineChart, Line, BarChart, Bar, ScatterChart, Scatter, XAxis, YAxis, CartesianGrid,
+      Tooltip, Legend, ResponsiveContainer
+    } = Recharts;
+
+    // Komponen utama App
+    const App = () => {
+      // Mengatur state untuk data dan status pemuatan
+      const [data, setData] = useState([]);
+      const [loading, setLoading] = useState(true);
+
+      // Memproses dan membersihkan data
+      const processAndCleanData = (rawData) => {
+        const monthOrder = [
+          'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni'
+        ];
+
+        return rawData
+          .filter(row => row['Bulan'] && row['Kecamatan'] && row['Pengguna_Aktif'])
+          .map(row => ({
+            Bulan: row['Bulan']?.trim(),
+            Kecamatan: row['Kecamatan']?.trim(),
+            Pengguna_Aktif: parseInt(row['Pengguna_Aktif']) || 0,
+            Domisili_Usage: parseFloat(row['Domisili_Usage(%)']) || 0,
+            Pajak_Usage: parseFloat(row['Pajak_Usage(%)']) || 0,
+            Keluhan_Usage: parseFloat(row['Keluhan_Usage(%)']) || 0,
+            Chatbot_Usage: parseFloat(row['Chatbot_Usage(%)']) || 0,
+            Rating_Domisili: parseFloat(row['Rating_Domisili']) || 0,
+            Rating_Pajak: parseFloat(row['Rating_Pajak']) || 0,
+            Rating_Keluhan: parseFloat(row['Rating_Keluhan']) || 0,
+            Rating_Chatbot: parseFloat(row['Rating_Chatbot']) || 0,
+            MonthIndex: monthOrder.indexOf(row['Bulan']?.trim())
+          }))
+          .filter(row => row.MonthIndex !== -1)
+          .sort((a, b) => a.MonthIndex - b.MonthIndex);
+      };
+
+      // Memuat dan mem-parsing data CSV
+      useEffect(() => {
+        const csvData = loadFileData('smartx_feedback_100rows.csv');
+        Papa.parse(csvData, {
+          header: true,
+          skipEmptyLines: true,
+          transformHeader: header => header.trim().replace(/^"|"$/g, ''),
+          transform: (value, header) => value.trim().replace(/^"|"$/g, ''),
+          complete: (results) => {
+            const cleanedData = processAndCleanData(results.data);
+            setData(cleanedData);
+            setLoading(false);
+          },
+          error: (err) => {
+            console.error('Error mem-parsing CSV:', err);
+            setLoading(false);
+          }
+        });
+      }, []);
+
+      // Menampilkan status pemuatan
+      if (loading) {
+        return (
+          <div className="text-center text-2xl font-semibold text-gray-600 mt-10">
+            Memuat Data Umpan Balik SmartX...
+          </div>
+        );
+      }
+
+      // Mengagregasi data untuk visualisasi
+      const kecamatans = [...new Set(data.map(d => d.Kecamatan))];
+      const months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni'];
+
+      // Menyiapkan data untuk Grafik Pengguna Aktif
+      const activeUsersData = months.map(month => {
+        const monthData = data.filter(d => d.Bulan === month);
+        const result = { Bulan: month };
+        kecamatans.forEach(k => {
+          const kecData = monthData.find(d => d.Kecamatan === k);
+          result[k] = kecData ? kecData.Pengguna_Aktif : 0;
+        });
+        return result;
+      });
+
+      // Menyiapkan data untuk Grafik Penggunaan Fitur
+      const usageData = kecamatans.map(kec => {
+        const kecData = data.filter(d => d.Kecamatan === kec);
+        return {
+          Kecamatan: kec,
+          Domisili: kecData.reduce((sum, d) => sum + d.Domisili_Usage, 0) / kecData.length,
+          Pajak: kecData.reduce((sum, d) => sum + d.Pajak_Usage, 0) / kecData.length,
+          Keluhan: kecData.reduce((sum, d) => sum + d.Keluhan_Usage, 0) / kecData.length,
+          Chatbot: kecData.reduce((sum, d) => sum + d.Chatbot_Usage, 0) / kecData.length
+        };
+      });
+
+      // Menyiapkan data untuk Grafik Rating Rata-Rata
+      const ratingsData = kecamatans.map(kec => {
+        const kecData = data.filter(d => d.Kecamatan === kec);
+        return {
+          Kecamatan: kec,
+          Domisili: kecData.reduce((sum, d) => sum + d.Rating_Domisili, 0) / kecData.length,
+          Pajak: kecData.reduce((sum, d) => sum + d.Rating_Pajak, 0) / kecData.length,
+          Keluhan: kecData.reduce((sum, d) => sum + d.Rating_Keluhan, 0) / kecData.length,
+          Chatbot: kecData.reduce((sum, d) => sum + d.Rating_Chatbot, 0) / kecData.length
+        };
+      });
+
+      // Menyiapkan data untuk Grafik Penggunaan Chatbot vs Rating
+      const scatterData = data.map(d => ({
+        Kecamatan: d.Kecamatan,
+        Chatbot_Usage: d.Chatbot_Usage,
+        Chatbot_Rating: d.Rating_Chatbot
+      }));
+
+      // Menentukan warna untuk kecamatan (konsisten untuk grafik yang ditentukan)
+      const kecamatanColors = {
+  'Kecamatan Timur': '#3B82F6', // Biru
+  'Kecamatan Selatan': '#10B981', // Hijau
+  'Kecamatan Tengah': '#8B5CF6', // Ungu
+  'Kecamatan Utara': '#F59E0B', // Kuning
+  'Kecamatan Barat': '#EF4444' // Merah
+};
+
+      // Menentukan warna untuk fitur (untuk grafik batang)
+      const featureColors = {
+        Domisili: '#3B82F6', // Biru
+        Pajak: '#10B981', // Hijau
+        Keluhan: '#F59E0B', // Kuning
+        Chatbot: '#EF4444' // Merah
+      };
+
+      // Tooltip khusus untuk kejelasan
+      const CustomTooltip = ({ active, payload, label }) => {
+        if (active && payload && payload.length) {
+          return (
+            <div className="bg-white p-4 border border-gray-200 rounded shadow">
+              <p className="font-semibold">{label}</p>
+              {payload.map((entry, index) => (
+                <p key={index} style={{ color: entry.color }}>
+                  {entry.name}: {entry.value.toFixed(2)}
+                </p>
+              ))}
+            </div>
+          );
+        }
+        return null;
+      };
+
+      // Merender dasbor
+      return (
+        <div className="bg-white rounded-lg shadow-lg p-6">
+          {/* Menambahkan judul dasbor */}
+          <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center">
+            Dasbor Analisis Umpan Balik SmartX
+          </h1>
+          <p className="text-gray-600 mb-8 text-center">
+            Menjelajahi keterlibatan pengguna, penggunaan fitur, dan kepuasan di berbagai kecamatan dari Januari hingga Juni. Grafik Pengguna Aktif dan Penggunaan Chatbot vs Rating menggunakan warna khusus untuk setiap kecamatan, sedangkan grafik Penggunaan Fitur dan Rating menggunakan warna berbasis fitur.
+          </p>
+
+          {/* Menyoroti fakta menarik */}
+          <div className="bg-blue-100 border-l-4 border-blue-500 p-4 mb-8">
+            <h2 className="text-lg font-semibold text-blue-800">Fakta Menarik</h2>
+            <p className="text-blue-600">
+              Kecamatan Tengah (Ungu) meningkatkan rating Chatbot dari 2.1 pada Maret menjadi 2.8 pada Juni, meskipun penggunaannya hanya 27%, menunjukkan pembaruan yang sukses.
+            </p>
+          </div>
+
+          {/* Visualisasi Pengguna Aktif Seiring Waktu */}
+<div className="mb-12">
+  <h2 className="text-xl font-semibold text-gray-700 mb-4">
+    Pengguna Aktif Seiring Waktu per Kecamatan
+  </h2>
+  <ResponsiveContainer width="100%" height={400}>
+    <LineChart data={activeUsersData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+      <CartesianGrid strokeDasharray="3 3" />
+      <XAxis dataKey="Bulan" fontSize={12} />
+      <YAxis label={{ value: 'Pengguna Aktif', angle: -90, position: 'insideLeft', fontSize: 12 }} fontSize={12} />
+      <Tooltip content={<CustomTooltip />} />
+      <Legend />
+      {kecamatans.map(kec => (
+        <Line
+          key={kec}
+          type="monotone"
+          dataKey={kec}
+          stroke={kecamatanColors[kec]} // Menggunakan warna dari objek kecamatanColors
+          strokeWidth={2}
+          dot={false}
+          name={kec}
+        />
+      ))}
+    </LineChart>
+  </ResponsiveContainer>
+  <p className="text-gray-600 mt-2">
+    Kecamatan Timur (Biru) memimpin dalam keterlibatan pengguna, sedangkan Kecamatan Barat (Merah) menunjukkan fluktuasi. Setiap kecamatan diberi warna berbeda untuk kejelasan.
+  </p>
+</div>
+          
+
+          {/* Visualisasi Penggunaan Fitur */}
+          <div className="mb-12">
+            <h2 className="text-xl font-semibold text-gray-700 mb-4">
+              Rata-Rata Penggunaan Fitur per Kecamatan
+            </h2>
+            <ResponsiveContainer width="100%" height={400}>
+              <BarChart data={usageData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="Kecamatan" fontSize={12} />
+                <YAxis label={{ value: 'Penggunaan (%)', angle: -90, position: 'insideLeft', fontSize: 12 }} fontSize={12} />
+                <Tooltip content={<CustomTooltip />} />
+                <Legend />
+                <Bar dataKey="Domisili" stackId="a" fill={featureColors.Domisili} name="Domisili" />
+                <Bar dataKey="Pajak" stackId="a" fill={featureColors.Pajak} name="Pajak" />
+                <Bar dataKey="Keluhan" stackId="a" fill={featureColors.Keluhan} name="Keluhan" />
+                <Bar dataKey="Chatbot" stackId="a" fill={featureColors.Chatbot} name="Chatbot" />
+              </BarChart>
+            </ResponsiveContainer>
+            <p className="text-gray-600 mt-2">
+              Domisili (Biru) adalah fitur yang paling banyak digunakan, sedangkan Chatbot (Merah) tertinggal, terutama di Kecamatan Barat.
+            </p>
+          </div>
+
+          {/* Visualisasi Rating Rata-Rata */}
+          <div className="mb-12">
+            <h2 className="text-xl font-semibold text-gray-700 mb-4">
+              Rata-Rata Rating per Fitur dan Kecamatan
+            </h2>
+            <ResponsiveContainer width="100%" height={400}>
+              <BarChart data={ratingsData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="Kecamatan" fontSize={12} />
+                <YAxis label={{ value: 'Rating (0-5)', angle: -90, position: 'insideLeft', fontSize: 12 }} fontSize={12} domain={[0, 5]} />
+                <Tooltip content={<CustomTooltip />} />
+                <Legend />
+                <Bar dataKey="Domisili" fill={featureColors.Domisili} name="Domisili" />
+                <Bar dataKey="Pajak" fill={featureColors.Pajak} name="Pajak" />
+                <Bar dataKey="Keluhan" fill={featureColors.Keluhan} name="Keluhan" />
+                <Bar dataKey="Chatbot" fill={featureColors.Chatbot} name="Chatbot" />
+              </BarChart>
+            </ResponsiveContainer>
+            <p className="text-gray-600 mt-2">
+              Rating Chatbot (Merah) secara konsisten rendah, menunjukkan perlunya perbaikan.
+            </p>
+          </div>
+
+          {/* Visualisasi Penggunaan Chatbot vs Rating */}
+          <div className="mb-12">
+            <h2 className="text-xl font-semibold text-gray-700 mb-4">
+              Penggunaan Chatbot vs Rating per Kecamatan
+            </h2>
+            <ResponsiveContainer width="100%" height={400}>
+              <ScatterChart margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+                <CartesianGrid />
+                <XAxis
+                  type="number"
+                  dataKey="Chatbot_Usage"
+                  name="Penggunaan (%)"
+                  unit="%"
+                  fontSize={12}
+                  domain={[0, 40]}
+                />
+                <YAxis
+                  type="number"
+                  dataKey="Chatbot_Rating"
+                  name="Rating"
+                  fontSize={12}
+                  domain={[0, 5]}
+                />
+                <Tooltip content={<CustomTooltip />} />
+                <Legend />
+                {kecamatans.map(kec => (
+                  <Scatter
+                    key={kec}
+                    name={kec}
+                    data={scatterData.filter(d => d.Kecamatan === kec)}
+                    fill={kecamatanColors[kec]}
+                  />
+                ))}
+              </ScatterChart>
+            </ResponsiveContainer>
+            <p className="text-gray-600 mt-2">
+              Tidak ada korelasi jelas antara penggunaan Chatbot dan rating, dengan Kecamatan Utara (Kuning) dan Barat (Merah) menunjukkan rating rendah. Setiap kecamatan diberi warna berbeda.
+            </p>
+          </div>
+
+          {/* Menambahkan Legenda Warna Kecamatan */}
+          <div className="mb-12">
+            <h2 className="text-xl font-semibold text-gray-700 mb-4">
+              Legenda Warna Kecamatan
+            </h2>
+            <div className="flex flex-wrap gap-4">
+              {Object.entries(kecamatanColors).map(([kec, color]) => (
+                <div key={kec} className="flex items-center">
+                  <div
+                    className="w-4 h-4 mr-2"
+                    style={{ backgroundColor: color }}
+                  ></div>
+                  <span className="text-gray-600">{kec}</span>
+                </div>
+              ))}
+            </div>
+            <p className="text-gray-600 mt-2">
+              Warna-warna ini digunakan pada grafik Pengguna Aktif Seiring Waktu dan Penggunaan Chatbot vs Rating untuk membedakan setiap kecamatan.
+            </p>
+          </div>
+
+          {/* Menambahkan Kesimpulan */}
+          <div className="bg-gray-50 p-6 rounded-lg">
+            <h2 className="text-xl font-semibold text-gray-700 mb-4">Kesimpulan</h2>
+            <p className="text-gray-600">
+              Platform SmartX menunjukkan keterlibatan pengguna yang kuat di Kecamatan Timur (Biru) dan kepuasan tinggi dengan fitur Domisili dan Pajak. Namun, penggunaan dan rating Chatbot yang rendah, terutama di Kecamatan Utara (Kuning) dan Barat (Merah), menunjukkan peluang untuk perbaikan. Fluktuasi musiman pada jumlah pengguna di Kecamatan Barat perlu diselidiki lebih lanjut. Peningkatan yang ditargetkan pada Chatbot dan strategi keterlibatan di kecamatan dengan kinerja rendah dapat meningkatkan kesuksesan platform secara keseluruhan.
+            </p>
+          </div>
+        </div>
+      );
+    };
+
+    // Merender aplikasi dengan createRoot
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>
