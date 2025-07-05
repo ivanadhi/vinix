@@ -57,8 +57,8 @@ Struktur data mencakup kolom-kolom berikut:
 
 ## Cara Menggunakan
 
-Tidak ada instalasi atau proses build yang diperlukan. Cukup unduh file `nama_file_anda.html` dan buka langsung di peramban web modern apa pun (seperti Google Chrome, Firefox, atau Microsoft Edge).
+Tidak ada instalasi atau proses build yang diperlukan. Cukup unduh file `index.html` dan buka langsung di peramban web modern apa pun (seperti Google Chrome, Firefox, atau Microsoft Edge).
 
 ```bash
 # Cukup buka file HTML di browser Anda
-buka nama_file_anda.html
+buka index.html
