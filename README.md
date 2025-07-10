@@ -4,7 +4,7 @@ Ini adalah proyek dasbor interaktif yang dibuat sebagai file HTML mandiri untuk 
 
 ## Pratinjau Dasbor
 
-![Pratinjau Dasbor SmartX](https://i.imgur.com/YOUR_IMAGE_URL.png) 
+![Pratinjau Dasbor SmartX](Output.png) 
 
 ## Deskripsi
 
